@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+} 
+.mainContent {
+  display: flex;    
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;        
+  margin-top: 20px;   
+  gap:36px;
+}
+.textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f8f8f8;; 
+    border-radius: 30px; 
+    width: 720px;  
+    height: 530px;
+}
+.textContentTitle{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    color: #121417;
+    padding-top: 92px;
+    padding-left: 61px;
+    padding-right: 111px;
+    padding-bottom: 36px;
+}
+.textContentTitle span{
+    border-radius: 8px;
+    width: 195px;
+    height: 40px;
+    background: #fbe9ba;
+    font-style: italic;
+    font-weight: 400;
+}
+.textContentDiscription{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 138%;
+    letter-spacing: -0.02em;
+    color: #121417;
+    padding-left: 76px;
+    padding-right: 173px;
+    padding-bottom: 64px;
+}
+.textContentButton {
+    display: inline-flex; /* Або inline-block, щоб працювали width та height */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Щоб падінги не роздували вказану ширину 267px */
+    
+    border-radius: 12px;
+    padding: 16px 88px;
+    width: 267px;
+    height: 60px;
+    background: #f4c550;
+    margin-left: 76px;
+    margin-top: -42px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #121417;
+    white-space: nowrap; 
+    text-decoration: none; /* Прибирає стандартне підкреслення посилання */
+}
+  .card {
+  width: 568px;
+  height: 530px;
+  background-color: #fbe9ba;
+  border-radius: 30px;
+  position: relative;        
+  overflow: hidden;         
+  display: flex;
+  justify-content: center;
+}
+.layerGirl {
+  bottom: 40px;
+  width: 339px;
+  height: 339px;
+  z-index: 1;  
+  margin-top: 80px;
+}
+.layerLaptop {
+  position: absolute;
+  bottom: 0;               
+  width: 359px;
+  height: auto;
+  z-index: 2;
+}
+.layerApple {
+  position: absolute;
+  bottom: 63px;            
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;        
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px auto 0 auto;
+  background-image: url('../../assets/border.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 1312px;
+  height: 116px;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  gap: 16px;            
+}
+
+.statisticValue {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #121417;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.statisticLabel {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(18, 20, 23, 0.7);
+  margin: 0;
+  max-width: 100px;
+}

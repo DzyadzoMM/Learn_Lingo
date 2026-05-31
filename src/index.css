@@ -1,0 +1,69 @@
+:root {
+  --text: #212529;          /* Стандартний темний колір тексту */
+  --text-h: #000000;        /* Чистий чорний для заголовків */
+  --bg: #ffffff;            /* Стандартний чисто білий фон */
+  --border: #dee2e6;        /* Світло-сіра дефолтна лінія */
+  --code-bg: #f8f9fa;       /* Світлий фон для коду */
+  
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;         /* Стандартна ширина для контенту Vite */
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+h1, h2 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-h);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+  background-color: var(--code-bg);
+  border-radius: 4px;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
