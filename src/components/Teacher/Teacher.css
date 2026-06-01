@@ -1,46 +1,164 @@
-.teacher_card{
+
+.teachers_list_container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.teacher_card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
     gap: 48px;
+    background: #ffffff;
     border-radius: 24px;
     padding: 24px;
-    width: 1184px;
-    height: 328px;
+    max-width: 1184px; 
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
+
 .teacher_logo {
     width: 120px;
     height: 120px;
     background: #fff;
     border: 3px solid #fbe9ba;
     border-radius: 50%;
-    display: inline-flex;     
+    display: flex;     
     align-items: center; 
     justify-content: center;  
     flex-shrink: 0;
 }
 
-.teacher_avata {
+.teacher_avatar {
     width: 96px;
     height: 96px;
     border-radius: 50%;
     object-fit: cover;       
     object-position: center; 
 }
+
+
 .teacher_info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 968px;
-    padding: 24px 0;
-    height: 280px;
+    gap: 16px;
+    flex-grow: 1; 
 }
-.teacher_details{
+
+.teacher_details {
     display: flex;
     flex-direction: row;
-    gap: 149px;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
 }
-.teacher_stats{
+
+.teacher_stats_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+}
+
+.teacher_stats {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teacher_stats li {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #121417;
+}
+
+.teacher_stats li span {
+    color: #38cd3e; 
+    font-weight: 600;
+    margin-left: 4px;
+}
+.teacher_description_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language_text {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8a8a89;
+    margin: 0 0 8px 0;
+}
+
+.teacher_name {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #121417;
+    margin: 0;
+}
+
+.info_text {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8a8a89;
+}
+
+.span_speaks {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #121417;
+}
+
+.span_info_text {
+    color: #121417;
+}
+
+.read_more_button {
+    font-family: var(--font-family), sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #121417;
+    align-self: flex-start; 
+    cursor: pointer;
+}
+
+.teacher_levels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 8px;
+    padding: 0;
+    margin: 16px 0 0 0;
+    list-style: none;
+}
+
+.teacher_levels_item {
+    border: 1px solid rgba(18, 20, 23, 0.2);
+    border-radius: 35px;
+    padding: 8px 12px;
+    font-family: var(--font-family), sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
